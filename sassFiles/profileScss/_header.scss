@@ -1,0 +1,156 @@
+header nav{
+    position: fixed; top: 0;
+    display: grid;
+    grid-template-columns: 200px auto 400px;
+    width: 100vw;
+    background-color: $bgc1;
+    height: 7vh;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: right;
+    direction: rtl;
+    grid-column-end: 4;
+    
+
+    /* margin-right: 40px; */
+    background-color: $bgc2;
+    width: 400px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    color: $white;
+    
+    line-height: 2;
+    
+    }
+header nav ul li{
+        font-size: $textSize*1.1;
+        font-family: $fontFamily;
+        padding: 0 10px 0 10px;
+        height: 100%;
+        
+        border-radius: 100px;
+        width: 130px;
+        display: flex;
+        
+        line-height: 2;
+        align-items: end;
+        justify-content: center; 
+        
+}
+header nav ul li a:hover{
+    color: aqua;
+}
+
+header  nav .navComponent{
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: $white;
+}
+.logoPlace{
+    
+    width: 100px;
+    display: flex;
+
+    background-color:$bgc2;
+    width: 200px;
+    height: 90%;
+    border-radius: 40px;
+    align-items: end;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+
+}
+.logoPlace img{
+    
+    border-radius: 30px;
+    width: 70px;
+}
+.logoPlace span{
+    color: white;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+section.heroIndex{
+    background-image: url(/imageFiles/portfolioBanner.jpg);
+    position: relative;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    
+    z-index: 2;
+    
+
+}
+section.heroIndex p,section.heroIndex h1{
+    z-index: 3;
+    font-weight: bold;
+    text-shadow: $headerColor 0 0 2px,$headerColor 0 0 10px,$headerColor 0 0 12px;
+    animation: neon-flicker 11.1s infinite alternate-reverse;
+}
+@keyframes neon-flicker{
+    from{
+        text-shadow: $headerColor 0 0 2px, $headerColor 0 0 10px, $headerColor 0 0 12px;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+.overlay{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.334);
+}
+header .heroIndex h1{
+    display: block;
+    font-size: 2.5rem;
+    color: $heroColor;
+}
+header .heroIndex p{
+    display: block;
+    font-size: $textSize;
+        color: $headerColor;
+
+}
+ul.listOfLanguages{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color:$bgc1;
+}
+.listOfLanguages img{
+    height: 50px;
+    
+}
+.listOfLanguages li{
+    
+    padding: 10px 10px 0px;
+    border-bottom: solid 6px rgb(18, 188, 255);
+}
+ul.listOfLanguages li img[src*=boostrap]{
+    height: 60px;/* the bostrap pic was smaller than the other icons.*/
+}
+.listOfLanguages li:hover{
+    background-color:$bgc2;
+}
+

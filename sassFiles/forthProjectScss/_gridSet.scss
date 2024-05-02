@@ -1,0 +1,64 @@
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(6, 150px);
+    gap: 15px;
+    height: 60vh;
+    background-color: #E5EEFF;
+    list-style-type: none;
+    width: 600px; 
+    margin: 0 auto;
+    
+}
+ul li.section{
+    background-color: #020253;
+    height: 100%;
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+@mixin header{
+    margin-top: 38%;
+    color: #0EE1DA;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+ul li.section h1{
+    margin-top: 38%;
+    color: #0EE1DA;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+@mixin p{
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.form{
+    grid-row: 4/7;
+    grid-column: 3/5;
+    background-color: #8E097C;
+}
+h1{
+    @include h1;
+}
+ul li.form h2{
+    @include h1;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+p{
+    @include p;
+
+    color: #E5EEFF;
+    margin-top: 1000px;
+
+}
+

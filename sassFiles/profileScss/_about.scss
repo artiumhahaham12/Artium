@@ -1,0 +1,104 @@
+
+section#about {
+    display: grid;
+    
+    grid-template-rows: 1fr 2fr 1fr;
+   /*  min-width: 100Vh; */
+    width: 1500px;
+    gap: 20px;
+    color: rgb(18, 188, 255);
+    text-align: center;
+    font-size: $headerSize;
+    font-family: $fontFamily;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px 5px black;
+    background-color: $bgcContent;
+    margin: 0 auto;
+    gap: 10px;
+    margin: 50px auto;
+
+}
+
+section#about h2 {
+    color: $headerColor;
+}
+section#about p{
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+    align-items: end;
+}
+
+section#about a {
+    color: $textColor;
+    text-decoration: none;
+    background-color: $buttonColor;
+    border-radius: $buttonRadius;
+    padding: $buttonPadding;
+    font-size: $textSize;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    height:fit-content;
+    align-self: flex-start;
+
+    
+
+}
+section.projectGallery{
+    display: grid;
+    grid-template-columns: repeat(3,(1440px/3));
+    grid-template-rows: repeat(2,300px);
+    gap: 30px;
+    justify-content: center;
+    div.galleryItem{
+        display: flex;
+        background-color: #1d2126;
+        border-radius: 10px;
+        
+    }
+    
+}
+footer{
+    direction: rtl;
+    display: grid;
+    background-color: #1d2126;
+    width: 100vw;
+    height: 700px;
+    margin-top: 50px;
+    grid-template-columns: repeat(12,200px);
+    grid-template-rows: repeat(15,50px);
+    form{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/4;
+        grid-row: 2/11;
+        width: 400px;
+        background-color: $bgc1;
+        border-radius: 15px;
+        input{
+            background-color: #1d2126;
+            height: 1.4rem;
+            width: 95%;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid $headerColor;
+            margin-bottom: 50px;
+
+        }
+        label{
+            font-size: 1.4rem;
+            color: #fff;
+            font-size: 2rem;
+        
+        }
+        
+
+    }
+}
+
+
+
+
