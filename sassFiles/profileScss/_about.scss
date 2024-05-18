@@ -121,82 +121,92 @@ section.projectGallery{
         h3{
             font-size: 2rem;
         }
+        
+    }
+}
 
-                }
-                }
-        
-        
-        
-                footer {
-                    direction: rtl;
-        
-                    background-color: hsl(213, 13%, 13%);
-                    width: 100vw;
-                    height: 900px;
-                    margin-top: 50px;
+
+
+footer {
+    direction: rtl;
+    
+    background-color: hsl(213, 13%, 13%);
+    width: 100vw;
+    height: 1000px;
+    margin-top: 50px;
                     grid-template-columns: repeat(12, 300px);
                     grid-template-rows: repeat(15, 50px);
                     padding-top: 100px;
         
                     .main-name {
-                        margin-top: 100px;
+                        margin-top: 90px;
                         color: #fff;
                         background-color: #000000;
                         display: flex;
                         list-style-type: none;
                         width: 100vw;
                         justify-content: space-evenly;
-        
+                        padding: 7px;
                         li {
                             color: rgba(255, 255, 255, 0.749);
                             font-size: 1.3rem;
                         }
                     }
                 }
-    .form{
-        
-        margin-right: 100px;
-        display: block;
-        width: 500px;
-
-        background-color: $bgc1;
-        form{
-            
-            margin: 0 auto;
-            display: flex;
-            width: 360px;
-            border-radius: 15px;
-            flex-direction: column;
-            
-        .contact-input{
-            background-color: #1d2126;
-            height: 50px;
-            border: 0;
-            border-bottom: 5px solid $headerColor;
-            width: 100%;
-            color: white;
-            margin-bottom: 25px;
-
-        }
-        label{
-            margin-top: 30px;
-            color: #fff;
-            font-size: 1.5rem;
-            
-        }
-        h2{
-            margin-top: 50px;
-            color: #fff;
-            font-size: 3rem;
-        }
-
-        
+                .form{
+                    
+                    margin-right: 100px;
+                    display: block;
+                    width: 500px;
+                    
+                    background-color: $bgc1;
+                    form{
+                        
+                        margin: 0 auto;
+                        display: flex;
+                        width: 360px;
+                        border-radius: 15px;
+                        flex-direction: column;
+                        
+                        .contact-input{
+                            background-color: #1d2126;
+                            height: 50px;
+                            border: 0;
+                            border-bottom: 5px solid $headerColor;
+                            width: 100%;
+                            color: white;
+                            margin-bottom: 25px;
+                            
+                        }
+                        label{
+                            margin-top: 30px;
+                            color: #fff;
+                            font-size: 1.5rem;
+                            
+                        }
+                        h2{
+                            margin-top: 50px;
+                            color: #fff;
+                            font-size: 3rem;
+                        }
+                        
+                        
     }
 }
-    
+#form-contact-to-submit{
+height: 40px;
+margin-top: 40px;
+width: 150px;
+border-radius: 20px;
+font-size: 1.3rem;
+font-weight: 500;
+background-color: $headerColor;
+}
 
-    
+
+
 @media (max-width:576px) {
+
     nav .humburger {
 
     color: #000000;
@@ -281,7 +291,7 @@ section.projectGallery{
         }
     }
     footer{
-        height: 1000px;
+        height: 1100px;
             
                 .form {
                     
@@ -337,8 +347,8 @@ section.projectGallery{
             display: flex;
             justify-content: space-around;
         }
-    }
-    @media (max-width:1024px){
+        }
+        @media (max-width:1024px){
         section.projectGallery{
         width: 95vw;
         margin-top: 30px;
@@ -350,6 +360,6 @@ section.projectGallery{
         a{
 
             background-size: cover;
-            }
+        }
             }
             }
