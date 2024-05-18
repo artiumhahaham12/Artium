@@ -91,6 +91,7 @@ h1 {
     width: 40vw;
 }
 
+
 .formContainer .form form .text textarea {
     height: 100px;
     align-self: flex-end;
@@ -155,10 +156,13 @@ h1 {
 .iconsList {
 
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    left: 1vw;
+    justify-content: left;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    align-items: end;
+    
+    
 }
 .iconsList li{
     display: flex;
@@ -185,12 +189,12 @@ h1 {
     height: 50px;
 }
 .yellowLine2 {
+    position: absolute;
+    bottom: 0;
     width: 40vw;
     height: 1.5vh;
     background: #FDBD03;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin-bottom: 0;
 }
 /* media 990 */
 @media (max-width: 576px){
@@ -244,14 +248,16 @@ h1 {
 .iconsList li{
     width: 40px;
     height: 40px;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 .iconsList{
-    position: absolute;
-    bottom: 0;
+    height: 300px;  
+    width: 100vw;
+    display: flex;
     justify-content: center;
-    left: 0;
-    right: 0;
+    align-items: center;
+    padding-left: 0;
+    height: 150px;
 
 }
 .iconsList li img{
@@ -270,7 +276,9 @@ h1 {
 .contact{
     flex-direction: row;
 }
-
+.formContainer{
+    height: 600px;
+}
 }
 
 
